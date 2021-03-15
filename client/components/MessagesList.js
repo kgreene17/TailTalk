@@ -3,7 +3,6 @@ import Message from './Message'
 import NewMessageEntry from './NewMessageEntry'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
-import message from '../../server/db/models/message'
 
 export const MessagesList = props => {
     const channelId = Number(props.match.params.channelId) // because it's a string "1", not a number!

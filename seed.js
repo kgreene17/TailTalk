@@ -17,7 +17,7 @@ const users = [...Array(10)].map(() => ({
 }))
 
 
-const id = () => Math.round(Math.random() * (users.length - 1)) + 1;
+//const id = () => Math.round(Math.random() * (users.length - 1)) + 1;
 
 const messages = [
   { userId: 1, content: 'Hi, how can I help you today', channelId: 1 },
@@ -29,7 +29,7 @@ const messages = [
   { userId: 2, content: 'Ok thank you - I will keep an eye on him!', channelId: 1 },
   { userId: 1, content: 'Great -- is there anything else?', channelId: 1 },
   { userId: 2, content: "No, I think that's all! Thank you for your help!", channelId: 1 },
-  { userId: id(), content: 'My pleasure. Have a great day and tell Rupert to curb that sweettooth!', channelId: 1 },
+  { userId: 1, content: 'My pleasure. Have a great day and tell Rupert to curb that sweettooth!', channelId: 1 },
 ];
 
 const seed = () =>
